@@ -37,6 +37,7 @@
             @include mq(0, 512px) {
                 height:190px;
                 left:5%;
+                top:30%;
             }
         }
         a {
@@ -45,7 +46,7 @@
                 height: 100%;
                 display: flex;
                 justify-content: center;
-                align-items: center;
+/*                 align-items: center; */
             }
         }
     }
