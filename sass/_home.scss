@@ -1,10 +1,10 @@
 .home-grid-container {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     display: grid;
-    grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
-
+    grid-template-rows: 20vh 20vh 20vh 20vh;
     div {
+        height: 100%;
         position: relative;
         img.painting {
             position: absolute;
@@ -29,6 +29,9 @@
         img.exhibitions {
             position: absolute;
             right: 35%;
+            &:hover {
+                opacity: 50%;
+            }
             @include mq(0, 512px) {
                 height: 98px;
                 right: 15%;
@@ -47,21 +50,25 @@
             }
         }
     }
-    .footer {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        a {
-            font-size: 18px;
-            i {
-                cursor: pointer;
-            }
-        }
-        input {
-            border: none;
-            background:none;
+}
+.footer {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 20vh;
+    /* @include mq(0, 512px) {
+        top: 25%;
+    } */
+    a {
+        font-size: 18px;
+        i {
             cursor: pointer;
         }
+    }
+    input {
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-left:2px;
     }
 }
