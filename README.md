@@ -1,4 +1,4 @@
-# Filipamorgado
+# FilipaMorgado
 Filipa Morgado is a portuguese Architect and Artist dedicated to Painting and Ceramics.
 This project is a gallery of the Artist's work.
 
