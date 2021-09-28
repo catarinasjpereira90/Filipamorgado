@@ -1,53 +1,66 @@
 .home-grid-container {
     height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-rows: 22.5vh 22.5vh 22.5vh 22.5vh 10vh;
+
     div {
         position: relative;
         img.painting {
             position: absolute;
             top: 70%;
-            left: 25%;
+            left: 32%;
             @include mq(0, 512px) {
-                left:20%;
-            }   
+                left: 20%;
+            }
         }
         img.bio {
             position: absolute;
             top: 50%;
             right: 50%;
             transform: translateY(-50%);
+            &:hover {
+                opacity: 50%;
+            }
             @include mq(0, 512px) {
                 height: 30px;
             }
         }
         img.exhibitions {
             position: absolute;
-            right: 30%;
+            right: 35%;
             @include mq(0, 512px) {
-                height:98px;
-                right:15%;
+                height: 98px;
+                right: 15%;
             }
         }
         img.ceramics {
+            fill: red;
             position: absolute;
             top: 50%;
-            right: 50%;
+            left: 33%;
             transform: translateY(-50%);
             @include mq(0, 512px) {
-                height:190px;
-                left:5%;
-                top:30%;
+                height: 190px;
+                left: 5%;
+                top: 30%;
             }
         }
+    }
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         a {
             font-size: 18px;
             i {
-                height: 100%;
-                display: flex;
-                justify-content: center;
-/*                 align-items: center; */
+                cursor: pointer;
             }
+        }
+        input {
+            border: none;
+            background:none;
         }
     }
 }
